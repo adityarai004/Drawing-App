@@ -86,6 +86,32 @@ class DrawingView(context: Context,attrs: AttributeSet): View(context,attrs) {
         mBrushSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,newSize,resources.displayMetrics)
         mDrawPaint!!.strokeWidth = mBrushSize
     }
+
+    fun changeColor(newColor:String){
+        when(newColor){
+            "black" ->{
+                color = Color.BLACK
+            }
+            "purple" ->{
+                color = Color.parseColor("#BB86FC")
+            }
+            "red" ->{
+                color = Color.parseColor("#FF0000")
+            }
+            "green" ->{
+                color = Color.parseColor("#00FF00")
+            }
+            "blue" ->{
+                color = Color.parseColor("#0000FF")
+            }
+            "orange" ->{
+                color = Color.parseColor("#F44336")
+            }
+            "yellow" ->{
+                color = Color.parseColor("#FFEB3B")
+            }
+        }
+    }
     internal inner class CustomPath(var color:Int,var brushThickness: Float): Path(){
 
     }
