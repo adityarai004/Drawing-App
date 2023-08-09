@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var ibBlue:ImageButton
     private lateinit var ibBhagwa:ImageButton
     private lateinit var ibYellow:ImageButton
+    private lateinit var ibEraser:ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         ibBlue = findViewById(R.id.blue)
         ibBhagwa = findViewById(R.id.bhagwa)
         ibYellow = findViewById(R.id.yellow)
+        ibEraser = findViewById(R.id.ib_eraser)
         ibBlack.setOnClickListener{
             drawingView.changeColor("black")
         }
@@ -55,6 +57,10 @@ class MainActivity : AppCompatActivity() {
         ibYellow.setOnClickListener{
             Toast.makeText(this,"Yellow button clicked",Toast.LENGTH_SHORT).show()
             drawingView.changeColor("yellow")
+        }
+        ibEraser.setOnClickListener{
+            Toast.makeText(this,"Eraser selected",Toast.LENGTH_SHORT).show()
+            drawingView.changeColor("eraser")
         }
         ibBrush = findViewById(R.id.ib_brush)
         ibBrush.setOnClickListener {

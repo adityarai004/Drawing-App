@@ -87,14 +87,29 @@
                 android:scaleType="fitXY" />
 
         </LinearLayout>
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/ib_brush"
-            android:src="@drawable/ic_brush"
-            android:contentDescription="brush_image"
-            android:scaleType="fitXY"
-            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_eraser"
+                android:layout_margin="2dp"
+                android:id="@+id/ib_eraser"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ib_brush"
+                android:src="@drawable/ic_brush"
+                android:contentDescription="brush_image"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
