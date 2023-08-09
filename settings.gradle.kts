@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Drawing App"
-include ':app'
+include(":app")

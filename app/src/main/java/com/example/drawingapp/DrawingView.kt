@@ -110,6 +110,9 @@ class DrawingView(context: Context,attrs: AttributeSet): View(context,attrs) {
             "yellow" ->{
                 color = Color.parseColor("#FFEB3B")
             }
+            "eraser" ->{
+                color = Color.parseColor("#FFFFFF")
+            }
         }
     }
     internal inner class CustomPath(var color:Int,var brushThickness: Float): Path(){
